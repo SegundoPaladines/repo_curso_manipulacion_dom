@@ -26,6 +26,8 @@ const accionNoProgaation = (e) => {
     console.log(`Hola no propagacion desde ${e.currentTarget.nodeName}: ${e.currentTarget.className}`);
 }
 
+//si se borran los accion no propagation verás como se propaga el evento
+
 div1.addEventListener('click', accion);
 div2.addEventListener('click', accionNoProgaation);
 div3.addEventListener('click', accionNoProgaation);
